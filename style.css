@@ -106,6 +106,192 @@ footer {
     padding: 1.5rem;
 }
 
+/* Active Navigation Link */
+nav a.active {
+    color: #3498db;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 2px;
+}
+
+/* Training Page */
+.training-page {
+    padding-top: 70px;
+}
+
+.training-hero {
+    background: linear-gradient(135deg, #27ae60, #2c3e50);
+    color: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.training-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.training-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.training-content h2 {
+    color: #2c3e50;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #27ae60;
+}
+
+.training-content h3 {
+    color: #34495e;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+/* Info Boxes */
+.training-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.info-box {
+    background: #f8f9fa;
+    padding: 1.25rem;
+    border-radius: 8px;
+    border-left: 4px solid #27ae60;
+}
+
+.info-box h3 {
+    color: #27ae60;
+    margin: 0 0 0.5rem 0;
+    font-size: 1rem;
+}
+
+.info-box p {
+    margin: 0;
+    color: #555;
+}
+
+/* Tables */
+.table-container {
+    overflow-x: auto;
+    margin: 1rem 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background: #2c3e50;
+    color: #fff;
+    font-weight: 600;
+}
+
+tr:hover {
+    background: #f8f9fa;
+}
+
+.total-row {
+    background: #e8f5e9 !important;
+}
+
+/* Exercise List */
+.exercise-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.exercise {
+    background: #fff;
+    padding: 1rem 1.25rem;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.exercise h4 {
+    color: #27ae60;
+    margin-bottom: 0.5rem;
+}
+
+.exercise ul {
+    margin: 0.5rem 0 0 1.25rem;
+    color: #555;
+}
+
+.exercise li {
+    margin-bottom: 0.25rem;
+}
+
+.duration {
+    color: #888;
+    font-style: italic;
+    margin-top: -0.5rem;
+}
+
+/* Hints Grid */
+.hints-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.hint-box {
+    background: #f8f9fa;
+    padding: 1.25rem;
+    border-radius: 8px;
+    border-top: 4px solid #3498db;
+}
+
+.hint-box h3 {
+    color: #3498db;
+    margin: 0 0 0.75rem 0;
+    font-size: 1.1rem;
+}
+
+.hint-box ul {
+    margin: 0;
+    padding-left: 1.25rem;
+    color: #555;
+}
+
+.hint-box li {
+    margin-bottom: 0.5rem;
+}
+
+.hint-box.warning {
+    border-top-color: #e74c3c;
+}
+
+.hint-box.warning h3 {
+    color: #e74c3c;
+}
+
+.version-info {
+    text-align: center;
+    color: #888;
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .hero h1 {
@@ -114,5 +300,17 @@ footer {
 
     nav ul {
         gap: 1rem;
+    }
+
+    .training-hero h1 {
+        font-size: 1.75rem;
+    }
+
+    .training-content {
+        padding: 1rem;
+    }
+
+    .hints-grid {
+        grid-template-columns: 1fr;
     }
 }
